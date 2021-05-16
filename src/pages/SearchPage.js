@@ -17,7 +17,7 @@ function SearchPage() {
                             aria-label="Large"
                             aria-describedby="inputGroup-sizing-sm"
                         />
-                        <span className="fa fa-search form-control-feedback"></span>
+                        <span className=" fa fa-search form-control-feedback"></span>
                     </div>
                 </form>
             </div>

@@ -20,17 +20,26 @@
 }
 
 .has-search .form-control-feedback {
+    /* padding-right: 10rem; */
     position: absolute;
-    z-index: 2;
+    right: 2.375rem;
+    z-index: 100;
     display: block;
     width: 2.375rem;
     height: 2.375rem;
     line-height: 2.375rem;
-    text-align: center;
+    text-align: right;
     pointer-events: none;
     color: #aaa;
-    background-color: red;
+    /* background-color: red; */
+    cursor: pointer;
 }
+
+
+
+/* .form-inline .input-group {
+    width: 500px;
+} */
 
 @font-face {
     font-family: 'Salsa';
