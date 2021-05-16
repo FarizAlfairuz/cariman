@@ -1,0 +1,21 @@
+.container {
+    margin-left: 13%;
+    /* background-color: white; */
+}
+
+.result-card img {
+    width: 227px;
+    height: 137px;
+    object-fit: cover;
+}
+.details h5 {
+    font-size: 24px;
+}
+.details h6 {
+    color: grey;
+    font-size: 18px;
+}
+.details p {
+    color: grey;
+    font-size: 14px;
+}

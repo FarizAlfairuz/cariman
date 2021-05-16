@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/css/searchpage.css'
+import { Link } from 'react-router-dom'
 
 function SearchPage() {
     return (
@@ -10,12 +11,13 @@ function SearchPage() {
                 <form className="form-inline w-100 my-lg-0">
                     <div className="form-group w-100 input-group has-search">
                         <input
-                            type="text"
+                            type="sumbit"
                             className="form-control"
                             placeholder="Cari tanaman"
                             style={{ borderRadius: "50px", fontSize: "24px", padding: "20px" }}
                             aria-label="Large"
                             aria-describedby="inputGroup-sizing-sm"
+                            onSubmit={<Link to="/result"></Link>}
                         />
                         <span className=" fa fa-search form-control-feedback"></span>
                     </div>
