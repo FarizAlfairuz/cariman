@@ -1,23 +1,95 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../assets/css/navbar.css'
 import '../assets/css/result.css'
 import Navbar from '../components/Navbar'
+import ResultCard from '../components/ResultCard'
+import axios from 'axios'
 
-function ResultPage() {
+function ResultPage(props) {
+    const { search } = props.match.params
+    const [nama, setNama] = useState([])
+    const [kategori, setKategori] = useState([])
+    const [nIlmiah, setNIlmiah] = useState([])
+
+    useEffect(() => {
+        axios
+            .get(`http://localhost:5000/api/cariman/?nama=${search}`)
+            .then((response) => {
+                console.log(response)
+                setNama(response.data.data)
+
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+
+        axios
+            .get(`http://localhost:5000/api/cariman/?kategori=${search}`)
+            .then((response) => {
+                console.log(response)
+                setKategori(response.data.data)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+
+        axios
+            .get(`http://localhost:5000/api/cariman/?nama_ilmiah=${search}`)
+            .then((response) => {
+                console.log(response)
+                setNIlmiah(response.data.data)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+    }, [search])
+    console.log("kategori")
+    console.log(kategori)
     return (
-        <div>
+        <div style={{ backgroundColor: "#f0f0f0", height: "100vh", width: "100%" }}>
             <Navbar></Navbar>
-            <div className="container-fluid pt-5">
+            <div className="container-fluid pt-3 pb-3">
                 <div className="container cards-container">
-                    <div className="result-card row">
-                        <div className="col-3">
-                            <img src="https://s4.bukalapak.com/img/4798892882/large/Bunga_Mawar_Merah.jpg" alt="" />
-                        </div>
-                        <div className="details col-9 pt-2">
-                            <h5>Bunga Mawar</h5>
-                            <h6>Rosa</h6>
-                            <p>Tanaman Hias</p>
-                        </div>
+                    <h5>Menampilkan pencarian {search}</h5>
+                    <div>
+                        {nama.length || kategori.length || nIlmiah.length !== 0 ? (
+                            <div>
+                                <div>
+                                    {nama.length !== 0 ? (
+                                        <div>
+                                            <p>Menampilkan {search} dalam nama tanaman</p>
+                                            {nama.map((hasil) => (
+                                                <ResultCard nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
+                                            ))}
+                                        </div>
+                                    ) : null}
+                                </div>
+                                <div>
+                                    {kategori.length !== 0 ? (
+                                        <div>
+                                            <p>Menampilkan {search} dalam kategori</p>
+                                            {kategori.map((hasil) => (
+                                                <ResultCard nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
+                                            ))}
+                                        </div>
+                                    ) : null}
+                                </div>
+                                <div>
+                                    {nIlmiah.length !== 0 ? (
+                                        <div>
+                                            <p>Menampilkan {search} dalam nama ilmiah tanaman</p>
+                                            {nIlmiah.map((hasil) => (
+                                                <ResultCard nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
+                                            ))}
+                                        </div>
+                                    ) : null}
+                                </div>
+                            </div>
+                        ) : (
+                            <div>
+                                <p>Data tidak ditemukan</p>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
@@ -26,4 +98,3 @@ function ResultPage() {
 }
 
 export default ResultPage
-

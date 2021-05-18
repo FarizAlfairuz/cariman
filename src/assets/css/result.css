@@ -1,11 +1,22 @@
 .container {
     margin-left: 13%;
+    /* padding-right: 13%; */
+    /* margin-right: 13%; */
     /* background-color: white; */
 }
 
+.result-card{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-width: 700px;
+}
+
 .result-card img {
-    width: 227px;
-    height: 137px;
+    width: 250px;
+    height: 140px;
+    border-radius: 20px;
     object-fit: cover;
 }
 .details h5 {
