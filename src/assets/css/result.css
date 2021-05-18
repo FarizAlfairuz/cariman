@@ -6,11 +6,12 @@
 }
 
 .result-card{
-    background-color: #fff;
+    background-color: white;
     border-radius: 30px;
     padding: 20px;
     margin-bottom: 20px;
-    min-width: 700px;
+    min-width: 800px;
+    box-shadow: 5px 10px 20px 0px rgba(199,199,199,1);
 }
 
 .result-card img {

@@ -43,10 +43,10 @@ function ResultPage(props) {
                 console.log(err)
             })
     }, [search])
-    console.log("kategori")
-    console.log(kategori)
+    // console.log("kategori")
+    // console.log(kategori)
     return (
-        <div style={{ backgroundColor: "#f0f0f0", height: "100vh", width: "100%" }}>
+        <div style={{ backgroundColor: "#f0f0f0", height: "100%", width: "100%", minHeight: "100vh" }}>
             <Navbar></Navbar>
             <div className="container-fluid pt-3 pb-3">
                 <div className="container cards-container">

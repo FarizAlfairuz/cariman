@@ -9,7 +9,7 @@ function Navbar() {
 
     return (
         <nav
-            className="navbar navbar-desktop navbar-expand"
+            className="navbar navbar-desktop navbar-expand mb-3"
             style={{ zIndex: "2" }}
         >
             <div className="collapse navbar-collapse " id="navbarTogglerDemo01">

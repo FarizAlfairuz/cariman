@@ -1,6 +1,7 @@
 .navbar-desktop {
     background-color: #FAD585;
     width: 100%;
+    box-shadow: 5px 10px 20px 0px rgba(199,199,199,1);
 }
 
 .navbar-nav {
