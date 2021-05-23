@@ -8,6 +8,7 @@ function SearchPage() {
 
     const inputHandler = (e) => {
         setSearch(e.target.value)
+        console.log(setSearch)
     }
 
     return (

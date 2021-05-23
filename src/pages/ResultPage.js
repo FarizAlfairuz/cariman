@@ -59,7 +59,7 @@ function ResultPage(props) {
                                         <div>
                                             <p>Menampilkan {search} dalam nama tanaman</p>
                                             {nama.map((hasil) => (
-                                                <ResultCard nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
+                                                <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
                                             ))}
                                         </div>
                                     ) : null}
@@ -69,7 +69,7 @@ function ResultPage(props) {
                                         <div>
                                             <p>Menampilkan {search} dalam kategori</p>
                                             {kategori.map((hasil) => (
-                                                <ResultCard nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
+                                                <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
                                             ))}
                                         </div>
                                     ) : null}
@@ -79,7 +79,7 @@ function ResultPage(props) {
                                         <div>
                                             <p>Menampilkan {search} dalam nama ilmiah tanaman</p>
                                             {nIlmiah.map((hasil) => (
-                                                <ResultCard nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
+                                                <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
                                             ))}
                                         </div>
                                     ) : null}

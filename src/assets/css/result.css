@@ -31,3 +31,7 @@
     color: grey;
     font-size: 14px;
 }
+
+.link:hover {
+    text-decoration: none;
+}
