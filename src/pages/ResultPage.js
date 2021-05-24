@@ -56,7 +56,7 @@ function ResultPage(props) {
                             <div>
                                 <div>
                                     {nama.length !== 0 ? (
-                                        <div>
+                                        <div className="pb-5">
                                             <p>Menampilkan {search} dalam nama tanaman</p>
                                             {nama.map((hasil) => (
                                                 <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
@@ -66,7 +66,7 @@ function ResultPage(props) {
                                 </div>
                                 <div>
                                     {kategori.length !== 0 ? (
-                                        <div>
+                                        <div className="pb-5">
                                             <p>Menampilkan {search} dalam kategori</p>
                                             {kategori.map((hasil) => (
                                                 <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
@@ -76,7 +76,7 @@ function ResultPage(props) {
                                 </div>
                                 <div>
                                     {nIlmiah.length !== 0 ? (
-                                        <div>
+                                        <div className="pb-5">
                                             <p>Menampilkan {search} dalam nama ilmiah tanaman</p>
                                             {nIlmiah.map((hasil) => (
                                                 <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
