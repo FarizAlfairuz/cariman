@@ -20,7 +20,7 @@ function SearchPage() {
                     <div className="form-group w-100 input-group has-search">
                         <input
                             type="text"
-                            className="form-control"
+                            className="form-control search-bar"
                             placeholder="Cari tanaman"
                             value={search}
                             onChange={inputHandler}

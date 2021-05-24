@@ -25,7 +25,7 @@ function DetailPage(props) {
             <Navbar></Navbar>
             <div className="result-card row" style={{ marginLeft: "10%", marginRight: "10%" }}>
                 {tanaman ? (
-                    <div className="p-5">
+                    <div>
                         <div className="col d-flex">
                             <img src={tanaman.urlFoto} alt="gambar-tanaman" />
                             <div className="ml-5">
@@ -35,7 +35,7 @@ function DetailPage(props) {
                             </div>
                         </div>
                         <div className="details col pt-5">
-                            <p>{tanaman.deskripsi}</p>
+                            <p className="text-justify">{tanaman.deskripsi}</p>
                         </div>
                     </div>
                 ) : null}

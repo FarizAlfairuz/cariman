@@ -13,13 +13,13 @@ function Navbar() {
             style={{ zIndex: "2" }}
         >
             <div className="collapse navbar-collapse " id="navbarTogglerDemo01">
-                <ul className=" navbar-nav d-flex align-items-center">
-                    <li className="nav-item ">
+                <ul className=" navbar-nav d-flex row align-items-center">
+                    <li className="nav-item cariman col-lg-1 col-md-2 col-sm-3">
                         <Link className="navbar-brand nav-link" to="/">
                             CariMan
                         </Link>
                     </li>
-                    <li>
+                    <li className="col-lg-8 col-md-8 col-sm-8">
                         <form className="form-inline w-100 my-lg-0" >
                             <div className="form-group w-100 input-group has-search">
                                 <input
@@ -28,7 +28,7 @@ function Navbar() {
                                     placeholder="Cari tanaman"
                                     value={search}
                                     onChange={inputHandler}
-                                    style={{ borderRadius: "50px", fontSize: "16px", padding: "20px", width: "746px" }}
+                                    style={{ borderRadius: "50px", fontSize: "16px", padding: "20px" }}
                                     aria-label="Large"
                                     aria-describedby="inputGroup-sizing-sm"
                                 />

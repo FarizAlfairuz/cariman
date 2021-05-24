@@ -46,10 +46,10 @@ function ResultPage(props) {
     // console.log("kategori")
     // console.log(kategori)
     return (
-        <div style={{ backgroundColor: "#f0f0f0", height: "100%", width: "100%", minHeight: "100vh" }}>
+        <div className="body">
             <Navbar></Navbar>
             <div className="container-fluid pt-3 pb-3">
-                <div className="container cards-container">
+                <div className="card-container">
                     <h5>Menampilkan pencarian {search}</h5>
                     <div>
                         {nama.length || kategori.length || nIlmiah.length !== 0 ? (

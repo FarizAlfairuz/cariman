@@ -3,16 +3,20 @@ import { Link } from 'react-router-dom'
 
 function ResultCard(props) {
     return (
-        <div className="d-flex">
+        <div>
             <Link className="link" to={`/detail/${props.id}`}>
-                <div className="result-card row">
-                    <div className="col">
-                        <img src={props.gambar} alt="gambar-tanaman" />
-                    </div>
-                    <div className="details col pt-2">
-                        <h5>{props.nama}</h5>
-                        <h6>{props.namaIlmiah}</h6>
-                        <p>{props.kategori}</p>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img class="d-block w-100" src={props.gambar} alt="gambar-tanaman"></img>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-block details">
+                                <h5>{props.nama}</h5>
+                                <h6>{props.namaIlmiah}</h6>
+                                <p>{props.kategori}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Link>
