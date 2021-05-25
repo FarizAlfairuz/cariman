@@ -8,7 +8,7 @@ function DetailPage(props) {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:5000/api/cariman/${id}`)
+            .get(`https://cariman-backend.herokuapp.com/api/cariman/${id}`)
             .then((response) => {
                 setTanaman(response.data.data)
                 console.log(response.data.data)

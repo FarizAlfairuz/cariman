@@ -13,7 +13,7 @@ function ResultPage(props) {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:5000/api/cariman/?nama=${search}`)
+            .get(`https://cariman-backend.herokuapp.com/api/cariman/?nama=${search}`)
             .then((response) => {
                 console.log(response)
                 setNama(response.data.data)
@@ -24,7 +24,7 @@ function ResultPage(props) {
             })
 
         axios
-            .get(`http://localhost:5000/api/cariman/?kategori=${search}`)
+            .get(`https://cariman-backend.herokuapp.com/api/cariman/?kategori=${search}`)
             .then((response) => {
                 console.log(response)
                 setKategori(response.data.data)
@@ -34,7 +34,7 @@ function ResultPage(props) {
             })
 
         axios
-            .get(`http://localhost:5000/api/cariman/?nama_ilmiah=${search}`)
+            .get(`https://cariman-backend.herokuapp.com/api/cariman/?nama_ilmiah=${search}`)
             .then((response) => {
                 console.log(response)
                 setNIlmiah(response.data.data)
