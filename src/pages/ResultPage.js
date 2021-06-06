@@ -34,7 +34,7 @@ function ResultPage(props) {
                                 <div>
                                     {query.length !== 0 ? (
                                         <div className="pb-5">
-                                            {nama.map((hasil) => (
+                                            {query.map((hasil) => (
                                                 <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
                                             ))}
                                         </div>
