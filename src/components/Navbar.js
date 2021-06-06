@@ -19,7 +19,8 @@ function Navbar() {
                             CariMan
                         </Link>
                     </li>
-                    <li className="col-lg-8 col-md-8 col-sm-8">
+                    
+                    <li className="ml-3 col-lg-8 col-md-8 col-sm-8">
                         <form className="form-inline w-100 my-lg-0" >
                             <div className="form-group w-100 input-group has-search">
                                 <input

@@ -28,14 +28,44 @@ function SearchPage() {
                             aria-label="Large"
                             aria-describedby="inputGroup-sizing-sm"
                         />
-                        <Link to={`/result/${search}`} style={{marginBottom: "2.375rem"}} >
+                        <Link to={`/result/${search}`} style={{ marginBottom: "2.375rem" }} >
                             <button type="submit" className="btn-search">
                                 <i className="fa fa-search"></i>
                             </button>
                         </Link>
                     </div>
+                    <div className="d-flex mt-3 w-100 justify-content-center"><h5>Kategori tanaman</h5></div>
+                    <div className="d-flex row w-100 justify-content-center ml-1">
+                        <div className="col-sm">
+                            <Link to={`/result/Tanaman`} style={{ marginBottom: "2.375rem" }} >
+                                <button className="btn-kategori">Semua</button>
+                            </Link>
+                        </div>
+                        <div className="col-sm">
+                            <Link to={`/result/Tanaman%20Hias`} style={{ marginBottom: "2.375rem" }} >
+                                <button className="btn-kategori">Hias</button>
+                            </Link>
+                        </div>
+                        <div className="col-sm">
+                            <Link to={`/result/Tanaman%20Obat`} style={{ marginBottom: "2.375rem" }} >
+                                <button className="btn-kategori">Obat</button>
+                            </Link>
+                        </div>
+                        <div className="col-sm">
+                            <Link to={`/result/Tanaman%20Buah`} style={{ marginBottom: "2.375rem" }} >
+                                <button className="btn-kategori">Buah</button>
+                            </Link>
+                        </div>
+                        <div className="col-sm">
+                            <Link to={`/result/Tanaman%20Hias`} style={{ marginBottom: "2.375rem" }} >
+                                <button className="btn-kategori">Pangan</button>
+                            </Link>
+                        </div>
+                    </div>
                 </form>
             </div>
+
+
         </div>
     )
 }
