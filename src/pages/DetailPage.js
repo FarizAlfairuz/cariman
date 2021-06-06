@@ -52,11 +52,14 @@ function DetailPage(props) {
                         <div className="details col pt-5">
                             <p className="text-justify">{tanaman.deskripsi}</p>
                         </div>
+                        <div className="my-5">
+                            <a href={`https://tanamart.herokuapp.com/search/?query=${tanaman.nama.toLowerCase()}`} className="btn btn-about">Beli di Tanamart</a>
+                        </div>
                     </div>
                 ) : null}
             </div>
 
-            <div className="card-container my-5">
+            <div className="card-container mt-5">
                 <h3>Menampilkan {tanaman.kategori} lainnya</h3>
                 {rekom ? (
                     <div>
