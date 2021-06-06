@@ -7,16 +7,14 @@ import axios from 'axios'
 
 function ResultPage(props) {
     const { search } = props.match.params
-    const [nama, setNama] = useState([])
-    const [kategori, setKategori] = useState([])
-    const [nIlmiah, setNIlmiah] = useState([])
+    const [query, setQuery] = useState([])
 
     useEffect(() => {
         axios
             .get(`https://cariman-backend.herokuapp.com/api/search?search=${search}`)
             .then((response) => {
                 console.log(response)
-                setNama(response.data.data)
+                setQuery(response.data.data)
 
             })
             .catch((err) => {
@@ -29,35 +27,14 @@ function ResultPage(props) {
             <Navbar></Navbar>
             <div className="container-fluid pt-3 pb-3">
                 <div className="card-container">
-                    <h5>Menampilkan pencarian {search}</h5>
+                    <h5>Menampilkan hasil pencarian "{search}"</h5>
                     <div>
-                        {nama.length || kategori.length || nIlmiah.length !== 0 ? (
+                        {query.length !== 0 ? (
                             <div>
                                 <div>
-                                    {nama.length !== 0 ? (
+                                    {query.length !== 0 ? (
                                         <div className="pb-5">
-                                            <p>Menampilkan {search} dalam nama tanaman</p>
                                             {nama.map((hasil) => (
-                                                <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
-                                            ))}
-                                        </div>
-                                    ) : null}
-                                </div>
-                                <div>
-                                    {kategori.length !== 0 ? (
-                                        <div className="pb-5">
-                                            <p>Menampilkan {search} dalam kategori</p>
-                                            {kategori.map((hasil) => (
-                                                <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
-                                            ))}
-                                        </div>
-                                    ) : null}
-                                </div>
-                                <div>
-                                    {nIlmiah.length !== 0 ? (
-                                        <div className="pb-5">
-                                            <p>Menampilkan {search} dalam nama ilmiah tanaman</p>
-                                            {nIlmiah.map((hasil) => (
                                                 <ResultCard id={hasil.id} gambar={hasil.urlFoto} nama={hasil.nama} namaIlmiah={hasil.nama_ilmiah} kategori={hasil.kategori} ></ResultCard>
                                             ))}
                                         </div>
