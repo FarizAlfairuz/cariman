@@ -35,7 +35,7 @@ function SearchPage() {
                         </Link>
                     </div>
                     <div className="d-flex mt-3 w-100 justify-content-center"><h5>Kategori tanaman</h5></div>
-                    <div className="d-flex row w-100 justify-content-center ml-1">
+                    <div className="d-flex row w-100 justify-content-center ml-1 mt-2">
                         <div className="col-sm">
                             <Link to={`/result/Tanaman`} style={{ marginBottom: "2.375rem" }} >
                                 <button className="btn-kategori">Semua</button>
@@ -57,7 +57,7 @@ function SearchPage() {
                             </Link>
                         </div>
                         <div className="col-sm">
-                            <Link to={`/result/Tanaman%20Hias`} style={{ marginBottom: "2.375rem" }} >
+                            <Link to={`/result/Tanaman%20Pangan`} style={{ marginBottom: "2.375rem" }} >
                                 <button className="btn-kategori">Pangan</button>
                             </Link>
                         </div>
