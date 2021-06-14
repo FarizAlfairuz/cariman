@@ -33,4 +33,4 @@ Kita juga bisa melihat error yang ada melalui console.
 ### Result Page
 ![result page](https://raw.githubusercontent.com/FarizAlfairuz/cariman/master/screenshots/resultpage.png)
 ### Detail page
-![detail page](https://raw.githubusercontent.com/FarizAlfairuz/cariman/master/screenshots/detailpage.png)
+![detail page](https://raw.githubusercontent.com/FarizAlfairuz/cariman/master/screenshots/detailspage.png)
