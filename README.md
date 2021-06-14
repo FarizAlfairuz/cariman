@@ -1,6 +1,6 @@
 # Source Code Frontend CariMan
 
-Proyek ini menggunakan framework ReacjJS
+Proyek ini menggunakan framework React.js
 
 ## Cara Menjalankan
 
@@ -21,7 +21,7 @@ Kita perlu menginstall dependency package agar server dapat berjalan dengan menj
 ### `npm start`
 
 Jalankan aplikasi dalam development mode dengan cara mejalankan command `npm start`\
-Kemudian [http://localhost:3000](http://localhost:3000) akan terbuka secara otomatis, jika tidak maka bisa masukkan secara manual. [http://localhost:3000](http://localhost:3000) digunakan untuk melihat website tersebut secara local.\
+Kemudian [http://localhost:3000](http://localhost:3000) akan terbuka secara otomatis, jika tidak maka bisa masukkan secara manual. [http://localhost:3000](http://localhost:3000) digunakan untuk melihat website tersebut secara local.
 
 Web ini akan berubah dan reload dengan sendirinya jika source code-nya diedit.\
 Kita juga bisa melihat error yang ada melalui console.
