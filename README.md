@@ -28,9 +28,9 @@ Kita juga bisa melihat error yang ada melalui console.
 
 ## Tampilan Website
 
-** Search Page
-![search page](http://url/to/img.png)
-** Result Page
-![result page](http://url/to/img.png)
-** Detail page
-![detail page](http://url/to/img.png)
+### Search Page
+![search page](https://raw.githubusercontent.com/FarizAlfairuz/cariman/master/screenshots/searchpage.png)
+### Result Page
+![result page](https://raw.githubusercontent.com/FarizAlfairuz/cariman/master/screenshots/resultpage.png)
+### Detail page
+![detail page](https://raw.githubusercontent.com/FarizAlfairuz/cariman/master/screenshots/detailpage.png)
