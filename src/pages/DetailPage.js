@@ -59,7 +59,7 @@ function DetailPage(props) {
                 ) : null}
             </div>
 
-            <div className="card-container mt-5">
+            <div className="card-container mt-5 pb-5">
                 <h3>Menampilkan {tanaman.kategori} lainnya</h3>
                 {rekom ? (
                     <div>
